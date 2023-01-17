@@ -1,3 +1,3 @@
 pushd $PSScriptRoot
-&"$PSScriptRoot/../../keepass" --plgx-create (gi ..)
+&"$PSScriptRoot/../../keepass" --plgx-create (pwd)
 popd
