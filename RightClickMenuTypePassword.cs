@@ -4,9 +4,9 @@ using KeePass.Plugins;
 using KeePass.Util;
 using KeePassLib;
 
-namespace AutoTypeSingle
+namespace RightClickMenuTypePassword
 {
-    public sealed class AutoTypeSingleExt : Plugin
+    public sealed class RightClickMenuTypePasswordExt : Plugin
     {
         private IPluginHost pluginHost = null;
 
@@ -21,8 +21,8 @@ namespace AutoTypeSingle
             // Provide a menu item for the main location(s)
             if (t == PluginMenuType.Entry)
             {
-                ToolStripMenuItem tsmi = new ToolStripMenuItem { Text = "AutoType Password" };
-                tsmi.Click += OnEntryAutoTypePasswordClick;
+                ToolStripMenuItem tsmi = new ToolStripMenuItem { Text = "Type Password" };
+                tsmi.Click += OnEntryTypePassword;
                 return tsmi;
             }
 
@@ -34,7 +34,7 @@ namespace AutoTypeSingle
             var item = (ToolStripMenuItem)sender;
             var parent = item.OwnerItem;
         }*/
-        private void OnEntryAutoTypeNameClick(object sender, EventArgs e)
+        private void OnEntryTypeName(object sender, EventArgs e)
         {
             if (pluginHost.MainWindow.GetSelectedEntriesCount() == 1)
             {
@@ -42,7 +42,7 @@ namespace AutoTypeSingle
                 AutoType.PerformIntoPreviousWindow(Form.ActiveForm, pe, pluginHost.Database, "{USERNAME}");
             }
         }
-        private void OnEntryAutoTypePasswordClick(object sender, EventArgs e)
+        private void OnEntryTypePassword(object sender, EventArgs e)
         {
             if (pluginHost.MainWindow.GetSelectedEntriesCount() == 1)
             {

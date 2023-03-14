@@ -5,8 +5,8 @@ using System.Runtime.InteropServices;
 // 有关程序集的一般信息由以下
 // 控制。更改这些特性值可修改
 // 与程序集关联的信息。
-[assembly: AssemblyTitle("AutoTypeSingle")]
-[assembly: AssemblyDescription("Auto Type A Single Field")]
+[assembly: AssemblyTitle("RightClickMenuTypePassword")]
+[assembly: AssemblyDescription("Right-Click-Menu TypePassword")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("QZLin")]
 [assembly: AssemblyProduct("KeePass Plugin")]

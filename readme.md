@@ -1,8 +1,8 @@
-# AutoTypeSingle
+# RightClickMenuTypePassword
 
-> A keepass plugin that provides the function of auto type specified fields
+> A keepass plugin that add type password function to Right-Click-Menu
 
 ## Usage
 
-If the plugin is installed correctly, you can find an option in the right-click menu.
+If the plugin is installed correctly, you can find an option at the right-click-menu.
 
